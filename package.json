@@ -1,0 +1,48 @@
+{
+  "name": "react-ast-translate",
+  "version": "0.0.1",
+  "description": "react 国际化 DEMO",
+  "main": "lib/index.js",
+  "scripts": {
+    "tsc": "tsc -w ./src/index.ts",
+    "test": "jest --config .jest.js --runInBand",
+    "start": "FROM=zh-CN TO=ja node ./src/index.js",
+    "version": "standard-version -- --release-as"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Nelayah/react-ast-translate.git"
+  },
+  "keywords": [
+    "function"
+  ],
+  "author": "hayalen",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/generator": "^7.12.5",
+    "@babel/parser": "^7.12.5",
+    "@babel/preset-react": "^7.12.5",
+    "@babel/preset-typescript": "^7.12.1",
+    "@types/jest": "latest",
+    "@types/node": "latest",
+    "@vitalets/google-translate-api": "^4.0.0",
+    "bluebird": "^3.7.2",
+    "cz-conventional-changelog": "latest",
+    "glob": "^7.1.6",
+    "jest": "latest",
+    "ramda": "latest",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "recast": "^0.20.4",
+    "standard-version": "latest",
+    "ts-jest": "latest",
+    "tslint": "latest",
+    "typescript": "latest"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
